@@ -1,0 +1,104 @@
+/*
+seletor{
+    propriedade:valor;    
+}
+*/
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2D033B; /*cor de fundo*/
+}
+
+img{
+    width: 100px;
+    border-radius: 50%;
+    border: 5px #2D033B solid;
+}
+
+div{
+    background-color: #F2DFE2;
+    width: 340px; /*largura (400 - 60 do padding)*/
+    height: auto; /*altura*/
+    text-align: center;
+
+    /*Centralizar a div*/
+    margin-left: auto;    
+    margin-right: auto;
+    margin-top: 80px; /*...*/
+
+    padding: 30px;/*espaçamento interno*/
+    border-radius: 10px;
+}
+
+h1{
+    color: #2D033B;        
+    font-size: 32px;
+    margin: 0;    
+}
+
+h2{
+    color: #810CA8;
+    font-size: 20px;
+    margin: 0;
+}
+
+p{
+    color: #666666;
+    /*font-size: 16px; valor inicial*/ 
+}
+
+ul{
+    padding: 0;
+    list-style-type: none; /*retirando os marcadores da lista*/
+}
+
+/*formatando todos os links<a> que estão dentro do <ul>*/
+ul a{
+    background-color:#2D033B;
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px 0; /*vertical (top/bottom), horizontal (left/right)*/
+    color: #FFFFFF;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+/*:hover ao passar o mouse no seletor*/
+ul a:hover{
+    background-color: #E5B8F4;
+    color: #2D033B;
+}
+
+#assinatura{
+    color: #2D033B;
+}
+
+#assinatura:hover{
+    color: #810CA8;
+}
+
+
+
+/*
+    Media Queries
+    Condicionais para o CSS ser aplicado
+*/
+
+/* Se a tela for de até 500px */
+@media (max-width: 500px){
+
+    div{
+        width: 300px;
+        padding: 15px;
+    }
+
+    img{
+        width: 80px;
+    }
+
+    h1{
+        font-size: 28px;
+        
+    }
+    
+}
